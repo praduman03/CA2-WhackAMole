@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body{
+    background-color: #E2BD3A;
+    font-family: 'Fredoka One', cursive;
+}
+.title{
+    color: #E2BD3A;
+    font-size: 70px;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+.hidetwo {
+    display: none;
+}
+
+.mole{
+    width: 250px;
+    margin-left: 650px;
+}
+.play-button{
+
+    font-size: 40px;
+    border: 5px solid black;
+    width: 350px;
+    text-align: center;
+    cursor: pointer;
+}
+.playbuttondiv{
+    display: flex;
+    justify-content: center;
+}
+.instruction-button{
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.inst{
+    text-align: center;
+    font-size: 18px;
+    width: 500px;
+    height: 305px;
+    background-color: #E2BD3A;
+    animation: instanim 0.8s;
+    position: absolute;
+    top: 180px;
+    left: 510px;
+    cursor: pointer;
+}
+
+@keyframes instanim {
+    0%
+    {
+        scale: 0.5;
+    }
+    100%
+    {
+        scale: 1;
+    }
+}
+.input{
+    position: relative;
+    background-color: #E2BD3A;
+    animation: inputanim 1s;
+    top: -187px;
+    text-align: center;
+}
+@keyframes inputanim {
+    0%
+    {
+        scale: 0.5;
+    }
+    100%
+    {
+        scale: 1;
+    }
+}
+.scoreboard{
+    text-align: center;
+    font-size: 50px;
+}
+.play-button3{
+    border:2px solid #000000;
+    width: 380px;
+    position:relative;
+    left: 560px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.phrases{
+    text-align: center;
+    font-size: 50px
+}
+.moleover{
+    position: relative;
+    left: 500px;
+}
+.gameoverpage{
+    overflow: hidden;
+    margin: 0px;
+}
+.img{
+    width: 500px;
+}
+.submitbutton{
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+.yourname{
+    background-color: #E2BD3A;
+    border: none;
+    border-bottom: 2px solid black;
+}
+@media only screen and (max-width: 600px){
+    .mole{
+        width: 24vh;
+        margin-left: 11vh;
+    }
+    .inst{
+        font-size: 13px;
+        width: 36vh;
+        height: 36vh;
+        top: 27vh;
+        left: 4vh;
+    }
+    .img{
+        width: 37vh;
+        margin-left: -54vh;
+    }
+    .play-button3{
+        width: 38vh;
+        left: 4vh;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    .scoreboard{
+        font-size: 35px;
+    }
+    .phrases{
+        font-size: 35px;
+    }
+}
